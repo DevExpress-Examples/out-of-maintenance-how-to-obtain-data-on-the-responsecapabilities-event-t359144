@@ -16,7 +16,7 @@ namespace ResponseCapabilitiesHandler {
             // Handle the ResponseCapabilities event.
             Provider.ResponseCapabilities += OnResponseCapabalities;
         }
-        void OnResponseCapabalities(object sender, CapabilitiesResponsedEventArgs e) {
+        void OnResponseCapabalities(object sender, CapabilitiesRespondedEventArgs e) {
             // Specify an active layer for the map control.
             Provider.ActiveLayerName = e.Layers[0].Name;
             // Recieve information on the active layer.

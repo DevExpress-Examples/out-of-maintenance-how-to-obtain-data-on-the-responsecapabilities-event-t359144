@@ -22,7 +22,7 @@ Namespace ResponseCapabilitiesHandler
             ' Handle the ResponseCapabilities event.
             AddHandler Provider.ResponseCapabilities, AddressOf OnResponseCapabalities
         End Sub
-        Private Sub OnResponseCapabalities(ByVal sender As Object, ByVal e As CapabilitiesResponsedEventArgs)
+        Private Sub OnResponseCapabalities(ByVal sender As Object, ByVal e As CapabilitiesRespondedEventArgs)
             ' Specify an active layer for the map control.
             Provider.ActiveLayerName = e.Layers(0).Name
             ' Recieve information on the active layer.
